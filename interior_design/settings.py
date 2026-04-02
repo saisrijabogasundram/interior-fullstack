@@ -27,7 +27,12 @@ SECRET_KEY = 'django-insecure-yi#8r4x*=wl252*hk&j+*ked2)*#m^4y&#v&kvwibbh7*^=5&^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["interior-fullstack-production.up.railway.app",
+    "127.0.0.1",
+    "localhost"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://interior-fullstack-production.up.railway.app"
+]
 
 
 SECRET_KEY = config('SECRET_KEY')
