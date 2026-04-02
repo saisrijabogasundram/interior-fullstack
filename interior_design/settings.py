@@ -33,7 +33,8 @@ ALLOWED_HOSTS = ["interior-fullstack-production.up.railway.app",
 CSRF_TRUSTED_ORIGINS = [
     "https://interior-fullstack-production.up.railway.app"
 ]
-
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG',default=False, cast=bool)
@@ -119,6 +120,9 @@ SIMPLE_JWT = {
     'ROTATE_REFRESH_TOKENS': True,
 }
 CORS_ALLOW_ALL_ORIGINS = True 
+CORS_ALLOWED_ORIGINS = [
+    "https://interior-fullstack-production.up.railway.app"
+]
 # Password validation
 # https://docs.djangoproject.com/en/6.0/ref/settings/#auth-password-validators
 
