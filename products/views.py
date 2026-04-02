@@ -54,7 +54,7 @@ class ProductCreateView(APIView):
         )
 
 
-# views.py
+
 class CartView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -66,13 +66,13 @@ class CartView(APIView):
             "count": cart_items.count()
         })
     def post(self, request):
-        # Add a product to cart
+       
         product_id = request.data.get('product')
         quantity = request.data.get('quantity', 1)
         if not product_id:
             return Response({"error": "Product id is required"}, status=400)
 
-        # check if item exists, update quantity if yes
+       
         cart_item, created = Cart.objects.get_or_create(
             customer=request.user,
             product_id=product_id,

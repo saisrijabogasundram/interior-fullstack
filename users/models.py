@@ -28,7 +28,7 @@ class User(AbstractUser):
 
     def __str__(self):
         return self.email
-    # ── Role helper methods ──
+   
     def is_owner(self):
         return self.role == 'owner'
 
