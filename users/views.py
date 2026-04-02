@@ -75,7 +75,7 @@ class VerifySMSOTPView(APIView):
         if verify_sms_otp(phone_number, otp):
             return Response({'message': 'OTP verified successfully', 'verified': True})
         return Response({'error': 'Invalid or expired OTP', 'verified': False}, status=400)
-# ── Owner Only — Manage Admins ──
+
 
 class ManageAdminsView(APIView):
     permission_classes = [IsOwner]
@@ -99,7 +99,6 @@ class ManageAdminsView(APIView):
         return Response({'message': 'Admin deleted'})
 
 
-# ── Admin & Owner — Manage Staff ──
 
 class ManageStaffView(APIView):
     permission_classes = [IsAdminOrOwner]
@@ -123,7 +122,7 @@ class ManageStaffView(APIView):
         return Response({'message': 'Staff deleted'})
 
 
-# ── Staff & Above — Manage Designers ──
+
 
 class ManageDesignersView(APIView):
     permission_classes = [IsStaffOrAbove]
@@ -142,7 +141,7 @@ class ManageDesignersView(APIView):
         return Response(serializer.errors, status=400)
 
 
-# ── Admin & Owner — Reports ──
+
 
 class ReportsView(APIView):
     permission_classes = [IsAdminOrOwner]
@@ -156,7 +155,7 @@ class ReportsView(APIView):
             'total_admins': User.objects.filter(role='admin').count(),
         }
         return Response(data)
-# ── Custom JWT Login — returns user data with token ──
+
 class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):
         data = super().validate(attrs)

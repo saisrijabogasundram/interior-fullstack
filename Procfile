@@ -1,0 +1,1 @@
+web: gunicorn interior_design.wsgi:application
