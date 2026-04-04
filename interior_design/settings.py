@@ -164,6 +164,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 CACHES = {
     'default': {
-        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'cache_table',
     }
 }
