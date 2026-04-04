@@ -1,0 +1,1130 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "30ztcvb1vqrhfoofuup1dtn0j91b3tm5",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHlMVBduu83kGEGpGogKe3K-O_apAvd3nPOfYmA21rC1tMSZhYXocXpd4tIj1R3wHestyap1XWZo9wVedAup8bpeT3cv4OCvXxrygkAdEayFh2Y86i01gzgskefVCY9REvOQvLkvCGOY2brBmV8ZjDi_QHlIjfZ:1w5jH2:BjnJXSfX0RTsEifuzybk7g4TqyTkoIxsdpaj3_HJRUY",
+    "expire_date": "2026-04-09T11:53:16.912Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "3t4wl1p0gwn2hnktxkn95r61w8z4moq1",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHlMVBduu83kGEGpGogKe3K-O_apAvd3nPOfYmA21rC1tMSZhYXocXpd4tIj1R3wHestyap1XWZo9wVedAup8bpeT3cv4OCvXxrygkAdEayFh2Y86i01gzgskefVCY9REvOQvLkvCGOY2brBmV8ZjDi_QHlIjfZ:1w7ssO:Yh2vPvnmv8_jWPEv_tHmb-JPXSaKHqjwebjo2Bnvlvc",
+    "expire_date": "2026-04-15T10:32:44.841Z"
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$ulNzbCKlQjOUpkxkS5am1V$Y7oh6qLIkhxbjHv8gU2MQFdGoXLZU+pA5TVJ1kCz1qA=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "InteriorDesign",
+    "first_name": "",
+    "last_name": "",
+    "email": "InteriorDesign@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-03-26T11:33:26.394Z",
+    "role": "customer",
+    "phone": null,
+    "profile_picture": "",
+    "created_at": "2026-03-26T11:33:27.019Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$lAXHdeVaTRYko6B1Apx2YL$jCVkd+LLbFYmq+N7WpFF/IoDhA+46t6tdJNVHmQGHtM=",
+    "last_login": "2026-04-01T10:32:44.364Z",
+    "is_superuser": true,
+    "username": "interior",
+    "first_name": "",
+    "last_name": "",
+    "email": "interior@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-03-26T11:51:33.745Z",
+    "role": "customer",
+    "phone": null,
+    "profile_picture": "",
+    "created_at": "2026-03-26T11:51:34.365Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$kdnSDLb3Azkqxbp94ZKCj9$HYfV3rYo0ONqph7YdI9EV1XYwBiJwL5RtJkQlub9Dq8=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "srija",
+    "first_name": "",
+    "last_name": "",
+    "email": "srija@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-03-26T12:58:50.755Z",
+    "role": "customer",
+    "phone": "",
+    "profile_picture": "",
+    "created_at": "2026-03-26T12:58:53.965Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 7,
+  "fields": {
+    "title": "Modern Living Room",
+    "description": "A stunning modern living room with clean lines and neutral tones",
+    "category": "living_room",
+    "style": "modern",
+    "budget": "high",
+    "image_url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800",
+    "created_at": "2026-03-31T10:14:50.421Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 8,
+  "fields": {
+    "title": "Minimalist Bedroom",
+    "description": "A peaceful minimalist bedroom with warm lighting",
+    "category": "bedroom",
+    "style": "minimalist",
+    "budget": "medium",
+    "image_url": "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800",
+    "created_at": "2026-03-31T10:16:45.946Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 9,
+  "fields": {
+    "title": "Modern Kitchen",
+    "description": "A sleek modular kitchen with premium fittings",
+    "category": "kitchen",
+    "style": "modern",
+    "budget": "high",
+    "image_url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800",
+    "created_at": "2026-03-31T10:17:44.994Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 10,
+  "fields": {
+    "title": "Classic Office",
+    "description": "A sophisticated office space with classic elements",
+    "category": "office",
+    "style": "classic",
+    "budget": "medium",
+    "image_url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800",
+    "created_at": "2026-03-31T10:18:30.080Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 11,
+  "fields": {
+    "title": "Industrial Bedroom",
+    "description": "Raw industrial style bedroom with exposed elements",
+    "category": "bedroom",
+    "style": "industrial",
+    "budget": "medium",
+    "image_url": "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800",
+    "created_at": "2026-03-31T10:19:36.275Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 12,
+  "fields": {
+    "title": "Classic Kitchen",
+    "description": "A warm and inviting classic kitchen design",
+    "category": "kitchen",
+    "style": "classic",
+    "budget": "medium",
+    "image_url": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800",
+    "created_at": "2026-03-31T10:20:34.799Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 13,
+  "fields": {
+    "title": "Minimalist Office",
+    "description": "Clean and productive minimalist workspace",
+    "category": "office",
+    "style": "minimalist",
+    "budget": "low",
+    "image_url": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800",
+    "created_at": "2026-03-31T10:21:17.269Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 14,
+  "fields": {
+    "title": "Bohemian Bedroom",
+    "description": "A cozy bohemian bedroom with layered textures and warm tones",
+    "category": "bedroom",
+    "style": "bohemian",
+    "budget": "low",
+    "image_url": "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800",
+    "created_at": "2026-03-31T10:23:32.307Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 15,
+  "fields": {
+    "title": "Bohemian Kitchen",
+    "description": "A colorful bohemian kitchen with handcrafted elements",
+    "category": "kitchen",
+    "style": "bohemian",
+    "budget": "low",
+    "image_url": "https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=800",
+    "created_at": "2026-03-31T10:24:32.140Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 16,
+  "fields": {
+    "title": "Bohemian Office",
+    "description": "A creative boho workspace with plants and artistic decor",
+    "category": "office",
+    "style": "bohemian",
+    "budget": "low",
+    "image_url": "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=800",
+    "created_at": "2026-03-31T10:25:30.421Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 17,
+  "fields": {
+    "title": "Boho Modular Living",
+    "description": "Bohemian style modular furniture with rattan and natural elements",
+    "category": "modular_furniture",
+    "style": "bohemian",
+    "budget": "medium",
+    "image_url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800",
+    "created_at": "2026-03-31T10:26:08.188Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 18,
+  "fields": {
+    "title": "Bohemian Lighting Decor",
+    "description": "Warm fairy lights and rattan lamps for a boho atmosphere",
+    "category": "lighting_decor",
+    "style": "bohemian",
+    "budget": "low",
+    "image_url": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800",
+    "created_at": "2026-03-31T10:26:46.512Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 19,
+  "fields": {
+    "title": "Modern Modular Furniture",
+    "description": "Clean modern modular furniture with smart storage",
+    "category": "modular_furniture",
+    "style": "modern",
+    "budget": "high",
+    "image_url": "https://images.unsplash.com/photo-1593069431672-f903a33c286f?w=500&q=80",
+    "created_at": "2026-03-31T10:27:24.764Z"
+  }
+},
+{
+  "model": "designs.design",
+  "pk": 20,
+  "fields": {
+    "title": "Classic Lighting Decor",
+    "description": "Elegant crystal chandeliers and warm classic lighting",
+    "category": "lighting_decor",
+    "style": "classic",
+    "budget": "high",
+    "image_url": "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?w=800",
+    "created_at": "2026-03-31T10:27:55.344Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 1,
+  "fields": {
+    "name": "Modern Sofa",
+    "description": "Premium 3-seater sofa with velvet finish",
+    "category": "furniture",
+    "price": "45000.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800",
+    "created_at": "2026-03-31T10:30:26.658Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 2,
+  "fields": {
+    "name": "Pendant Light",
+    "description": "Elegant gold pendant light for living room",
+    "category": "lighting",
+    "price": "8500.00",
+    "stock": 25,
+    "image_url": "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?w=800",
+    "created_at": "2026-03-31T10:31:02.678Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 3,
+  "fields": {
+    "name": "Wooden Dining Table",
+    "description": "Solid wood 6-seater dining table",
+    "category": "furniture",
+    "price": "32000.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1617806118233-18e1de247200?w=800",
+    "created_at": "2026-03-31T10:31:43.837Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 4,
+  "fields": {
+    "name": "Wall Art Decor Set",
+    "description": "Set of 3 abstract wall art pieces",
+    "category": "decor",
+    "price": "3500.00",
+    "stock": 50,
+    "image_url": "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=800",
+    "created_at": "2026-03-31T10:32:26.482Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 5,
+  "fields": {
+    "name": "Modular Wardrobe",
+    "description": "4-door sliding wardrobe with mirror",
+    "category": "modular",
+    "price": "75000.00",
+    "stock": 5,
+    "image_url": "https://images.unsplash.com/photo-1672137233327-37b0c1049e77?w=500&q=80",
+    "created_at": "2026-03-31T10:33:03.771Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 6,
+  "fields": {
+    "name": "Hardwood Flooring",
+    "description": "Premium oak hardwood flooring per sq ft",
+    "category": "flooring",
+    "price": "1200.00",
+    "stock": 500,
+    "image_url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800",
+    "created_at": "2026-03-31T10:33:48.414Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 7,
+  "fields": {
+    "name": "Recliner Chair",
+    "description": "Comfortable leather recliner for living room",
+    "category": "furniture",
+    "price": "28000.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800",
+    "created_at": "2026-03-31T10:34:34.656Z"
+  }
+},
+{
+  "model": "products.product",
+  "pk": 8,
+  "fields": {
+    "name": "Floor Lamp",
+    "description": "Modern arc floor lamp with warm light",
+    "category": "lighting",
+    "price": "6500.00",
+    "stock": 30,
+    "image_url": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800",
+    "created_at": "2026-03-31T10:35:15.066Z"
+  }
+},
+{
+  "model": "products.cart",
+  "pk": 5,
+  "fields": {
+    "customer": [
+      "interior"
+    ],
+    "product": 2,
+    "quantity": 1,
+    "added_at": "2026-04-01T18:37:31.963Z"
+  }
+},
+{
+  "model": "products.cart",
+  "pk": 6,
+  "fields": {
+    "customer": [
+      "interior"
+    ],
+    "product": 3,
+    "quantity": 1,
+    "added_at": "2026-04-01T18:37:54.903Z"
+  }
+},
+{
+  "model": "products.cart",
+  "pk": 7,
+  "fields": {
+    "customer": [
+      "interior"
+    ],
+    "product": 4,
+    "quantity": 1,
+    "added_at": "2026-04-02T07:06:46.519Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "srija"
+    ],
+    "jti": "c36049a61e60473e922949c010fcb7e6",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTEzNDgxNiwiaWF0IjoxNzc0NTMwMDE2LCJqdGkiOiJjMzYwNDlhNjFlNjA0NzNlOTIyOTQ5YzAxMGZjYjdlNiIsInVzZXJfaWQiOiIzIn0.9XOnpsnobg_XnSRgLAhM9Tf8dEx7_iZYh-mv0Xbdcf8",
+    "created_at": "2026-03-26T13:00:16.808Z",
+    "expires_at": "2026-04-02T13:00:16Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "srija"
+    ],
+    "jti": "80ac0075224847379394a99ed50a7c89",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTEzNDg4NCwiaWF0IjoxNzc0NTMwMDg0LCJqdGkiOiI4MGFjMDA3NTIyNDg0NzM3OTM5NGE5OWVkNTBhN2M4OSIsInVzZXJfaWQiOiIzIn0.ataFrf68CEE771OjtDFJ3aXOCstJKbyYo0vj1hZxJPk",
+    "created_at": "2026-03-26T13:01:24.597Z",
+    "expires_at": "2026-04-02T13:01:24Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "srija"
+    ],
+    "jti": "882a0cb6f87247c88b41eae63ddead87",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTEzNjYzMywiaWF0IjoxNzc0NTMxODMzLCJqdGkiOiI4ODJhMGNiNmY4NzI0N2M4OGI0MWVhZTYzZGRlYWQ4NyIsInVzZXJfaWQiOiIzIn0.ZWndICprv_vyoAHBEDLszhHpZQSmmgZDKhQQueIfxOU",
+    "created_at": "2026-03-26T13:30:33.641Z",
+    "expires_at": "2026-04-02T13:30:33Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "srija"
+    ],
+    "jti": "aa416960df92459ba3e64f3bbe037461",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTIwNzcxMSwiaWF0IjoxNzc0NjAyOTExLCJqdGkiOiJhYTQxNjk2MGRmOTI0NTliYTNlNjRmM2JiZTAzNzQ2MSIsInVzZXJfaWQiOiIzIn0.06e0p1HCx9H6OuLezXYui-8cGbyo9UbdlYM5EJRwoEs",
+    "created_at": "2026-03-27T09:15:11.741Z",
+    "expires_at": "2026-04-03T09:15:11Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "srija"
+    ],
+    "jti": "f4b552f877574c48a794d3d4e37a73b0",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTIxNTUxMSwiaWF0IjoxNzc0NjEwNzExLCJqdGkiOiJmNGI1NTJmODc3NTc0YzQ4YTc5NGQzZDRlMzdhNzNiMCIsInVzZXJfaWQiOiIzIn0.ffiuhntibJKVDtN8VzkFYO96MtmQlF6TbYMbUxiFlD8",
+    "created_at": "2026-03-27T11:25:11.646Z",
+    "expires_at": "2026-04-03T11:25:11Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "srija"
+    ],
+    "jti": "f262022fb81b43ddb556b45de6b4892a",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTIxNTY5MiwiaWF0IjoxNzc0NjEwODkyLCJqdGkiOiJmMjYyMDIyZmI4MWI0M2RkYjU1NmI0NWRlNmI0ODkyYSIsInVzZXJfaWQiOiIzIn0.5yPzTsGdlXrQW9mcZnslpDZ3l4YgRsrQW4FQkx40iaM",
+    "created_at": "2026-03-27T11:28:12.019Z",
+    "expires_at": "2026-04-03T11:28:12Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "srija"
+    ],
+    "jti": "e7ac6b6079e24e7581108713d955955d",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTIxNTcyNSwiaWF0IjoxNzc0NjEwOTI1LCJqdGkiOiJlN2FjNmI2MDc5ZTI0ZTc1ODExMDg3MTNkOTU1OTU1ZCIsInVzZXJfaWQiOiIzIn0.RFOmM61sfhd-lzDOXPPZK8YQBIqiX40o5m-wbHri3I4",
+    "created_at": "2026-03-27T11:28:45.330Z",
+    "expires_at": "2026-04-03T11:28:45Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "interior"
+    ],
+    "jti": "25380524733c4e6ca2991246dcf11263",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTIxOTQ1MSwiaWF0IjoxNzc0NjE0NjUxLCJqdGkiOiIyNTM4MDUyNDczM2M0ZTZjYTI5OTEyNDZkY2YxMTI2MyIsInVzZXJfaWQiOiIyIn0.8isbB3lEX_eNiH3cXhlxpRMaz_w677hgefuB7C1si1s",
+    "created_at": "2026-03-27T12:30:51.180Z",
+    "expires_at": "2026-04-03T12:30:51Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 9,
+  "fields": {
+    "user": [
+      "interior"
+    ],
+    "jti": "f2f38e587500471db85572fe6b3a179b",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTIyNzg3NywiaWF0IjoxNzc0NjIzMDc3LCJqdGkiOiJmMmYzOGU1ODc1MDA0NzFkYjg1NTcyZmU2YjNhMTc5YiIsInVzZXJfaWQiOiIyIn0.uE2QXLAP0eoG18mN5pVAuNu_hE-iBJ5LLfPl5cQLSIQ",
+    "created_at": "2026-03-27T14:51:17.001Z",
+    "expires_at": "2026-04-03T14:51:17Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 10,
+  "fields": {
+    "user": [
+      "interior"
+    ],
+    "jti": "cee8329b46884cdb88c48e6106054ccd",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTI3NjA0NSwiaWF0IjoxNzc0NjcxMjQ1LCJqdGkiOiJjZWU4MzI5YjQ2ODg0Y2RiODhjNDhlNjEwNjA1NGNjZCIsInVzZXJfaWQiOiIyIn0.9aOirrtDQ-f2F27c919uNqc0QwZ7JMVgsnZVAagpYts",
+    "created_at": "2026-03-28T04:14:05.842Z",
+    "expires_at": "2026-04-04T04:14:05Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 11,
+  "fields": {
+    "user": [
+      "interior"
+    ],
+    "jti": "0fc48b0c70fd410c9efa002e86e7ae43",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTU4MDE4MSwiaWF0IjoxNzc0OTc1MzgxLCJqdGkiOiIwZmM0OGIwYzcwZmQ0MTBjOWVmYTAwMmU4NmU3YWU0MyIsInVzZXJfaWQiOiIyIn0.udJE9HJ057EinF31-MjQBrlgjDskRqswnrm3Y3Y7uKQ",
+    "created_at": "2026-03-31T16:43:01.522Z",
+    "expires_at": "2026-04-07T16:43:01Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 12,
+  "fields": {
+    "user": [
+      "interior"
+    ],
+    "jti": "9fe4b9c77c144d4a957a4094a2d7fef8",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTU4Mzk5MiwiaWF0IjoxNzc0OTc5MTkyLCJqdGkiOiI5ZmU0YjljNzdjMTQ0ZDRhOTU3YTQwOTRhMmQ3ZmVmOCIsInVzZXJfaWQiOiIyIn0.C1FeKg_WiUjZUlLg9BgIKdgtKsYEF1tfZXmuczLJnbU",
+    "created_at": "2026-03-31T17:46:32.127Z",
+    "expires_at": "2026-04-07T17:46:32Z"
+  }
+},
+{
+  "model": "token_blacklist.outstandingtoken",
+  "pk": 13,
+  "fields": {
+    "user": [
+      "interior"
+    ],
+    "jti": "a5488785fe2a4164b5a6a248dae23259",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NTY1MjcwNywiaWF0IjoxNzc1MDQ3OTA3LCJqdGkiOiJhNTQ4ODc4NWZlMmE0MTY0YjVhNmEyNDhkYWUyMzI1OSIsInVzZXJfaWQiOiIyIn0.nA7r-d9uUX24BLwsuzN7qZjBdYPhdC3mzGmUKhSKbbM",
+    "created_at": "2026-04-01T12:51:47.630Z",
+    "expires_at": "2026-04-08T12:51:47Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2026-03-31T10:14:50.853Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "7",
+    "object_repr": "Modern Living Room",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2026-03-31T10:15:43.917Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "6",
+    "object_repr": "Home Office Setup",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2026-03-31T10:15:43.917Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "5",
+    "object_repr": "Minimal Bathroom Design",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2026-03-31T10:15:43.917Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "4",
+    "object_repr": "Compact Modular Kitchen",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2026-03-31T10:15:43.917Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "3",
+    "object_repr": "Luxury Living Room",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2026-03-31T10:15:43.917Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "2",
+    "object_repr": "Modern Bedroom Design",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2026-03-31T10:15:43.917Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "1",
+    "object_repr": "Modern Bedroom",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2026-03-31T10:16:45.969Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "8",
+    "object_repr": "Minimalist Bedroom",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2026-03-31T10:17:44.997Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "9",
+    "object_repr": "Modern Kitchen",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2026-03-31T10:18:30.106Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "10",
+    "object_repr": "Classic Office",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2026-03-31T10:19:36.407Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "11",
+    "object_repr": "Industrial Bedroom",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2026-03-31T10:20:34.802Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "12",
+    "object_repr": "Classic Kitchen",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2026-03-31T10:21:17.271Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "13",
+    "object_repr": "Minimalist Office",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2026-03-31T10:23:32.359Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "14",
+    "object_repr": "Bohemian Bedroom",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2026-03-31T10:24:32.249Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "15",
+    "object_repr": "Bohemian Kitchen",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2026-03-31T10:25:30.438Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "16",
+    "object_repr": "Bohemian Office",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2026-03-31T10:26:08.208Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "17",
+    "object_repr": "Boho Modular Living",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2026-03-31T10:26:46.523Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "18",
+    "object_repr": "Bohemian Lighting Decor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2026-03-31T10:27:24.767Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "19",
+    "object_repr": "Modern Modular Furniture",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2026-03-31T10:27:55.347Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "20",
+    "object_repr": "Classic Lighting Decor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2026-03-31T10:30:26.882Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "1",
+    "object_repr": "Modern Sofa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2026-03-31T10:31:02.700Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "2",
+    "object_repr": "Pendant Light",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2026-03-31T10:31:43.929Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "3",
+    "object_repr": "Wooden Dining Table",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2026-03-31T10:32:26.502Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "4",
+    "object_repr": "Wall Art Decor Set",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2026-03-31T10:33:03.805Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "5",
+    "object_repr": "Modular Wardrobe",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2026-03-31T10:33:48.418Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "6",
+    "object_repr": "Hardwood Flooring",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2026-03-31T10:34:34.659Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "7",
+    "object_repr": "Recliner Chair",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2026-03-31T10:35:15.069Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "8",
+    "object_repr": "Floor Lamp",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2026-04-01T11:30:40.115Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "20",
+    "object_repr": "Classic Lighting Decor",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2026-04-01T12:50:45.964Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "designs",
+      "design"
+    ],
+    "object_id": "19",
+    "object_repr": "Modern Modular Furniture",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image url\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2026-04-01T13:22:19.816Z",
+    "user": [
+      "interior"
+    ],
+    "content_type": [
+      "products",
+      "product"
+    ],
+    "object_id": "5",
+    "object_repr": "Modular Wardrobe",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image url\"]}}]"
+  }
+}
+]
