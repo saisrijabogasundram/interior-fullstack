@@ -2,6 +2,7 @@ import random
 import requests
 from django.core.cache import cache
 from django.conf import settings
+
 def send_sms_otp(phone_number):
     otp = str(random.randint(100000, 999999))
     cache.set(f'otp_{phone_number}', otp, timeout=300)
@@ -10,17 +11,18 @@ def send_sms_otp(phone_number):
         'https://www.fast2sms.com/dev/bulkV2',
         headers={
             'authorization': settings.FAST2SMS_API_KEY,
-            'Content-Type': 'application/json',
         },
-        json={
-            'route': 'otp',
-            'variables_values': otp,
+        params={
+            'route': 'q',
+            'message': f'Your OTP is {otp}. Valid for 5 minutes.',
+            'language': 'english',
+            'flash': 0,
             'numbers': phone_number,
         }
     )
 
-    print("Fast2SMS status:", response.status_code)  # ← add this
-    print("Fast2SMS response:", response.text)        # ← add this
+    print("Fast2SMS status:", response.status_code)
+    print("Fast2SMS response:", response.text)
 
     data = response.json()
     if not data.get('return'):
