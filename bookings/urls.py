@@ -6,8 +6,10 @@ from .views import (
     BookingCreateView,
     BookingListView,
     BookingDetailView,
-    CustomerBookingView, ManageBookingsView
-
+    CustomerBookingView,
+    ManageBookingsView,
+    LeadCreateView,      
+    LeadManageView,      
 )
 
 urlpatterns = [
@@ -20,4 +22,7 @@ urlpatterns = [
     path('create/', BookingCreateView.as_view(), name='booking-create'),
     path('', BookingListView.as_view(), name='booking-list'),
     path('<int:pk>/', BookingDetailView.as_view(), name='booking-detail'),
+    path('leads/', LeadCreateView.as_view(), name='lead-create'),         
+    path('leads/manage/', LeadManageView.as_view(), name='lead-manage'), 
+    path('leads/manage/<int:pk>/', LeadManageView.as_view(), name='lead-manage-detail'),
 ]

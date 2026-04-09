@@ -85,3 +85,32 @@ class Booking(models.Model):
     def __str__(self):
         name = self.customer.username if self.customer else self.guest_name
         return f"{name} → {self.designer.user.username} ({self.status})"
+    
+class Lead(models.Model):
+    STATUS_CHOICES = (
+        ('new', 'New'),
+        ('contacted', 'Contacted'),
+        ('confirmed', 'Confirmed'),
+        ('cancelled', 'Cancelled'),
+    )
+
+    name = models.CharField(max_length=200)
+    phone = models.CharField(max_length=20)
+    email = models.EmailField(blank=True, null=True)
+    message = models.TextField(blank=True, null=True)
+    assigned_to = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name='assigned_leads'
+    )
+    status = models.CharField(
+        max_length=20,
+        choices=STATUS_CHOICES,
+        default='new'
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.name} - {self.phone} ({self.status})"

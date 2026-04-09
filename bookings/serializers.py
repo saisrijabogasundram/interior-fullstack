@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Designer, Booking
+from .models import Designer, Booking, Lead
 
 
 class DesignerSerializer(serializers.ModelSerializer):
@@ -43,3 +43,9 @@ class BookingSerializer(serializers.ModelSerializer):
                 'Please provide your name and phone number to book a site visit.'
             )
         return data
+
+class LeadSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Lead
+        fields = '__all__'
+        read_only_fields = ['created_at']

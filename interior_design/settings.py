@@ -39,7 +39,7 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 CSRF_COOKIE_SECURE = True
 
-FAST2SMS_API_KEY = config('FAST2SMS_API_KEY', default='')
+
 # Application definition
 
 INSTALLED_APPS = [

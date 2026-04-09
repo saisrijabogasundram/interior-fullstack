@@ -3,8 +3,8 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny
-from .models import Designer, Booking
-from .serializers import DesignerSerializer, BookingSerializer
+from .models import Designer, Booking, Lead
+from .serializers import DesignerSerializer, BookingSerializer, LeadSerializer
 from users.permissions import IsStaffOrAbove
 
 
@@ -132,3 +132,40 @@ class BookingDetailView(APIView):
                 {'error': 'Booking not found'},
                 status=status.HTTP_404_NOT_FOUND
             )
+class LeadCreateView(APIView):
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        serializer = LeadSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+
+class LeadManageView(APIView):
+    permission_classes = [IsStaffOrAbove]
+
+    def get(self, request):
+        leads = Lead.objects.all().order_by('-created_at')
+        serializer = LeadSerializer(leads, many=True)
+        return Response(serializer.data)
+
+    def patch(self, request, pk):
+        try:
+            lead = Lead.objects.get(pk=pk)
+            serializer = LeadSerializer(lead, data=request.data, partial=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            return Response(serializer.errors, status=400)
+        except Lead.DoesNotExist:
+            return Response({'error': 'Lead not found'}, status=404)
+
+    def delete(self, request, pk):
+        try:
+            lead = Lead.objects.get(pk=pk)
+            lead.delete()
+            return Response({'message': 'Lead deleted'})
+        except Lead.DoesNotExist:
+            return Response({'error': 'Lead not found'}, status=404)
