@@ -107,7 +107,14 @@ class ManageStaffView(APIView):
         staff = User.objects.filter(role='staff')
         serializer = UserSerializer(staff, many=True)
         return Response(serializer.data)
-
+    def post(self, request):                    
+        data = request.data.copy()
+        data['role'] = 'staff'
+        serializer = RegisterSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({'message': 'Staff member added successfully'}, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     def patch(self, request, pk):
         user = User.objects.get(pk=pk, role='staff')
         serializer = UserSerializer(user, data=request.data, partial=True)
