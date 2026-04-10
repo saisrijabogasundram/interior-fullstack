@@ -6,7 +6,8 @@ from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny
 from .models import Designer, Booking, Lead
 from .serializers import DesignerSerializer, BookingSerializer, LeadSerializer
 from users.permissions import IsStaffOrAbove
-
+from django.core.mail import send_mail
+from django.conf import settings
 
 class CustomerBookingView(APIView):
     permission_classes = [IsAuthenticated]
@@ -138,7 +139,24 @@ class LeadCreateView(APIView):
     def post(self, request):
         serializer = LeadSerializer(data=request.data)
         if serializer.is_valid():
-            serializer.save()
+            lead = serializer.save()
+            try:
+                send_mail(
+                subject=f'New Lead: {lead.name}',
+                message=f'''
+                    You have a new lead!
+
+                    Name    : {lead.name}
+                    Email   : {lead.email}
+                    Phone   : {lead.phone}
+                    Message : {lead.message}
+                ''',
+                from_email=settings.EMAIL_HOST_USER,
+                recipient_list=[settings.ADMIN_EMAIL],
+                fail_silently=False,
+            )
+            except Exception as e:
+                print(f"Email error:{e}")
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
